@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #3c5571 50%, #f4f4f4 50%);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar (Left Panel) */
+.sidebar {
+    width: 50%; /* Now exactly half */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    width: 400px; /* Increased size */
+    height: 350px;
+    background-image: url("images/LOGOS.png"); /* Ensure correct path */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Adjust positioning */
+    margin-top: -40px; /* Moves up slightly */
+    margin-bottom: 40px;
+}
+
+
+
+h2 {
+    font-size: 50px; /* Keep the large size */
+    font-weight: bold;
+    text-align: center;
+    margin-top: -20px; /* Move title up */
+    margin-bottom: 15px; /* Keep some spacing */
+}
+
+.logout {
+    background-color: white;
+    color: black;
+    padding: 16px 35px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 30px; /* Moves logout button down */
+}
+
+
+
+/* Content Section (Right Panel) */
+.content {
+    width: 50%; /* Now exactly half */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Buttons */
+.btn {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(167, 165, 165);
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: darkgray;
+    border: 3px solid #000;
+    transform: scale(1.1); /* Slightly increase size */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Click (Active) Effect */
+.btn:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
