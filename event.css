@@ -1,0 +1,82 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #3c5571;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+/* Hide the button elements */
+.btn, .logout, .add-event {
+    display: none;
+}
+
+/* Style the text that replaces the buttons */
+.btn-text, .logout-text, .event-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: white; /* Set text color to match the sidebar */
+    display: block;
+    margin: 10px 0;
+    text-align: right;
+    padding: 10px;
+    transition: 0.3s; /* Smooth transition effect */
+}
+
+/* Hover Effects */
+.btn-text:hover, .logout-text:hover {
+    color: #ffd700; /* Gold color on hover */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    width: 80%;
+    padding: 40px;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: lightgray;
+}
